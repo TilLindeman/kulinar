@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+
+* {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: rgba(1, 66, 196, 1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgba(194, 152, 109, 1);
+  padding: 1% 7%;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(194, 152, 109, 1);
+  padding: 1% 7%;
+}
+
+.button {
+  padding: 20px 50px;
+  border-radius: 100vmin;
+  color: rgba(1, 66, 196, 1);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+:hover.button {
+  background-color: rgb(204, 204, 204);
+  transition-duration: 300ms;
+}
+
+.Img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .ref1 {
+    text-decoration: none;
+  }
+
+  .Img {
+    width: 90%;
+    height: auto;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .top-left {
+    font-size: 8vmin;
+    padding: 0px 10px;
+  }
+  .bottom-right {
+    font-size: 8vmin;
+  }
+  .button {
+    font-size: 8vmin;
+  }
+}

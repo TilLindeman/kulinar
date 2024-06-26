@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+
+* {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Roboto;
+  background-color: rgba(206, 152, 82, 1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgba(1, 66, 196, 1);
+  padding: 1% 7%;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(1, 66, 196, 1);
+  padding: 1% 7%;
+}
+
+.button {
+  padding: 20px 50px;
+  border-radius: 100vmin;
+  color: rgba(1, 66, 196, 1);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Img {
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.Img-2 {
+  width: 280px;
+  height: auto;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgba(1, 66, 196, 1);
+}
+
+.text-1,
+.text-2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#text {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .bottom-right {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .top-left {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ref1 {
+    text-decoration: none;
+  }
+
+  .button {
+    padding: 2vmin 2.5vmin;
+    font-size: 1em;
+  }
+
+  .Img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .text-1 {
+    font-size: 6vmin;
+  }
+
+  .text-2 {
+    font-size: 6vmin;
+  }
+}
+
+@media (max-width: 992px) {
+  .bottom-right {
+    visibility: hidden;
+  }
+  .top-left {
+    visibility: hidden;
+  }
+}
+
+@media (max-height: 750px) {
+  .block {
+    width: 250px;
+    height: 250px;
+  }
+  .Img {
+    width: 250px;
+    height: 250px;
+  }
+  .Img-2 {
+    width: 220px;
+    height: 220px;
+  }
+  .block {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .text-1 {
+    font-size: 8vmin;
+  }
+  .text-2 {
+    font-size: 8vmin;
+  }
+}

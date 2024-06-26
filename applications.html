@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kulinar</title>
+    <link rel="stylesheet" href="applications.css" />
+
+    <link rel="website icon" href="icon_2.png" type="png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-left">Пивная кулинария</div>
+      <div class="icon">
+        <img src="iconKulinar.png" alt="300" class="IconImg" />
+      </div>
+      <form id="myForm">
+        <input
+          type="hidden"
+          name="access_key"
+          value="f330f176-47cb-4d77-acd9-b592990df87d"
+        />
+
+        <div class="logInSection">
+          <h1 class="textLogIn">Форма заявки</h1>
+          <div class="www">
+            <div class="input-container">
+              <span class="error-message" style="display: none"
+                >Это поле обязательное</span
+              >
+              <input type="text" name="ФИО" placeholder="ФИО" class="input" />
+            </div>
+            <div class="input-container">
+              <span id="phoneError" class="error-message" style="display: none"
+                >Пожалуйста, введите корректный номер телефона</span
+              >
+              <input
+                type="text"
+                name="Моб.телефон"
+                placeholder="Моб.телефон"
+                class="input"
+              />
+            </div>
+            <div class="input-container">
+              <span class="error-message" style="display: none"
+                >Это поле обязательное</span
+              >
+              <input
+                type="text"
+                name="Имейл"
+                placeholder="Имейл"
+                class="input"
+              />
+            </div>
+            <div class="input-container">
+              <span class="error-message" style="display: none"
+                >Это поле обязательное</span
+              >
+              <input
+                type="text"
+                name="Комментарий"
+                placeholder="Комментарий"
+                class="input"
+              />
+            </div>
+          </div>
+
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+
+          <button type="submit">отправить кулинару</button>
+        </div>
+      </form>
+      <div class="bottom-right">Десертное пиво</div>
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>

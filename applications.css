@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+
+* {
+  font-family: Roboto;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-left,
+.bottom-right {
+  position: absolute;
+  padding: 1% 7%;
+  color: rgba(1, 66, 196, 1);
+  font-size: 30px;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: rgba(1, 66, 196, 1);
+  margin-bottom: 30px;
+}
+
+.IconImg {
+  width: 210px;
+  height: 210px;
+}
+
+.www {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.www input {
+  border-radius: 100vmin;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  margin: 10px 0;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.www input::placeholder {
+  color: rgba(1, 66, 196, 1);
+}
+
+.logInSection {
+  background-color: rgba(206, 152, 82, 1);
+  padding: 30px 50px;
+  border-radius: 10%;
+  width: 100%;
+}
+
+.logInSection button {
+  width: 100%;
+  background-color: rgba(1, 66, 196, 1);
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 100vmin;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.textLogIn {
+  color: white;
+}
+
+/* Медиа-запросы для адаптивности */
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .IconImg {
+    width: 160px;
+    height: 160px;
+  }
+
+  .logInSection {
+    padding: 20px;
+  }
+
+  .www input {
+    font-size: 25px;
+  }
+
+  .logInSection button {
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 10px 0px;
+  }
+  .top-left {
+    visibility: hidden;
+  }
+  .bottom-right {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .top-left {
+    visibility: hidden;
+  }
+  .bottom-right {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top-left {
+    font-size: 8vmin;
+    padding: 0px 10px;
+  }
+  .bottom-right {
+    font-size: 8vmin;
+  }
+  .container {
+    padding: 5px;
+  }
+
+  .icon {
+    width: 105px;
+    height: 105px;
+  }
+
+  .IconImg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .logInSection {
+    padding: 10px;
+  }
+
+  .www input {
+    font-size: 20px;
+  }
+
+  .logInSection button {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
